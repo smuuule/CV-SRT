@@ -35,8 +35,8 @@
 
 %CV Sections inspired by: 
 %http://stefano.italians.nl/archives/26
-\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
-\titlespacing{\section}{0pt}{10pt}{10pt}
+\titleformat{\section}{\large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{5pt}{5pt}
 
 %for publications
 \usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
@@ -58,21 +58,30 @@
 \pagestyle{empty} 
 
 %Titles
-\begin{tabularx}{\linewidth}{@{}l X@{}}
-\Huge{Samuel Runmark Thunell} \\[7.5pt]  &  \includegraphics{DSC03993.JPG}
+\begin{minipage}{0.7\textwidth}
+\begin{tabularx}{\linewidth}{@{}C @{}}
+\Huge{Samuel Runmark Thunell} \\[7.5pt]
 \href{https://linkedin.com/in/samuelrunmarkthunell}{\raisebox{-0.05\height}\faLinkedin\ samuelrunmarkthunell} \ $|$ \ 
 \href{https://github.com/smuuule}{\raisebox{-0.05\height}\faGithub\ smuuule} \
 \\
 \href{mailto:samuel.runmark@gmail.com}{\raisebox{-0.05\height}\faEnvelope \ samuel.runmark@gmail.com} \ $|$ \ 
-\href{tel:+46761692970}{\raisebox{-0.05\height}\faMobile \ +46.76.169.2970} \\
-\end{tabularx}
+\href{tel:+46761692970}{\raisebox{-0.05\height}\faMobile \ +46.76.169.2970}  \\    
+\end{tabularx} 
+\end{minipage}
+\hfill
+\begin{minipage}{0.3\textwidth}
+    \includegraphics[scale=0.75]{DSC03993.JPG}
+\end{minipage}
+
 
 %Personal Introduction
+
 \section{Who am I?}
 I am a social, forward-facing, engaged student that never backs down from a challenge. I am right now studying for a Bachelor's Degree in Computer Science and Engineering at Chalmers University of Technology. In my free time, I'll spend time performing music, playing video games or hanging out with friends and family.
 
 %Education
 \section{Education}
+
 \begin{tabularx}{\linewidth}{@{}l X@{}}	
 2021 - present & Bachelor's student in Computer Science and Engineering at \textbf{Chalmers, Gothenburg} \hfill \\
 
@@ -116,6 +125,7 @@ I am a social, forward-facing, engaged student that never backs down from a chal
 %Skills
 
 \section{Skills}
+
 \begin{tabularx}{\linewidth}{@{}l X@{}}
 \textbf{Programming Languages} &  \normalsize{Python, Java, C, Haskell, JavaScript, react.js, C\#}\\
 \textbf{Language Skills}  &  \normalsize{Swedish is my mother tongue, but I am also fluent in English.}\\
